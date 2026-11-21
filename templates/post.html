@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+${ _head() }
+</head>
+<body>
+<header class="top">
+${ _path() }
+${ _nav() }
+</header>
+
+<main class="page">
+<article class="post">
+  <header class="post-head">
+    <h1 class="title">$title$</h1>
+    <p class="meta">
+      <time datetime="$date$">$date$</time>
+$for(tag_links)$
+      <a class="tag" href="$tag_links.url$">#$tag_links.name$</a>
+$endfor$
+    </p>
+  </header>
+
+  <div class="prose">
+$body$
+  </div>
+
+</article>
+
+$-- Related posts: chosen by build.py (shared tags). Remove this block to hide them.
+$if(related)$
+<section class="related">
+  <h2 class="label">see also</h2>
+  <ul class="postlist">
+$for(related)$
+    <li><time datetime="$related.date$">$related.date$</time> <a href="$related.url$">$related.title$</a></li>
+$endfor$
+  </ul>
+</section>
+$endif$
+
+<p class="back"><a href="/log/">../log</a></p>
+</main>
+
+${ _foot() }
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

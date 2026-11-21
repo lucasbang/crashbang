@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://crashbang.sh/">
+  <title>crashbang.sh</title>
+  <id>https://crashbang.sh/</id>
+  <link href="https://crashbang.sh/" />
+  <link rel="self" href="https://crashbang.sh/feed.xml" />
+  <updated>2026-11-21T00:00:00Z</updated>
+  <author>
+    <name>crashbang.sh</name>
+  </author>
+  <entry>
+    <title>First Post</title>
+    <id>https://crashbang.sh/log/2026/11/21/first-post/</id>
+    <link href="https://crashbang.sh/log/2026/11/21/first-post/" />
+    <published>2026-11-21T00:00:00Z</published>
+    <updated>2026-11-21T00:00:00Z</updated>
+    <category term="meta" />
+    <category term="crashbang" />
+    <content type="html">&lt;p&gt;This is the first post on crashbang.sh.&lt;/p&gt;
+&lt;p&gt;After many abandoned attempts to put some ideas on the internet, I am giving it one more try.&lt;/p&gt;
+&lt;p&gt;For now, I am mostly just testing whether my little build and deploy system works.&lt;/p&gt;
+&lt;p&gt;Hopefully more to come.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

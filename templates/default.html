@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+${ _head() }
+</head>
+<body>
+<header class="top">
+${ _path() }
+${ _nav() }
+</header>
+
+<main class="page">
+$if(title)$
+<h1 class="title">$title$</h1>
+$endif$
+
+$if(body)$
+<div class="prose">
+$body$
+</div>
+$endif$
+
+$-- Generated listings. build.py fills these in; ordinary pages leave them empty.
+$if(posts)$
+${ _postlist() }
+$endif$
+
+$if(years)$
+<div class="archive">
+$for(years)$
+  <section>
+    <h2 id="y$years.year$">$years.year$</h2>
+$for(years.months)$
+    <h3>$years.months.month$</h3>
+    <ul class="daylist">
+$for(years.months.posts)$
+      <li><time datetime="$years.months.posts.date$">$years.months.posts.day$</time> <a href="$years.months.posts.url$">$years.months.posts.title$</a></li>
+$endfor$
+    </ul>
+$endfor$
+  </section>
+$endfor$
+</div>
+$endif$
+
+$if(taglist)$
+<ul class="taglist">
+$for(taglist)$
+  <li><a href="$taglist.url$">#$taglist.name$</a> <span class="count">$taglist.count$</span></li>
+$endfor$
+</ul>
+$endif$
+</main>
+
+${ _foot() }
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

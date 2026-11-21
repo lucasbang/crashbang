@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+${ _head() }
+</head>
+<body class="home">
+<header class="hero" aria-label="crashbang.sh">
+  <h1 class="mark"><span class="crash">⨳</span><span class="bang">!</span></h1>
+  <div class="domain">crashbang.sh<span class="cursor" aria-hidden="true"></span></div>
+</header>
+
+<main class="page">
+$if(body)$
+<div class="intro">
+$body$
+</div>
+$endif$
+
+<section class="recent">
+  <h2 class="label"><a href="/log/">~/log</a></h2>
+${ _postlist() }
+</section>
+
+${ _nav() }
+</main>
+
+${ _foot() }
+</body>
+</html>
