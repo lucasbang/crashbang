@@ -1,0 +1,466 @@
+@comment{
+  XBSTRXCT shared bibliography (BibTeX / BibLaTeX).
+  Cite an entry in any page by its key in square brackets, with an at-sign before the key;
+  see content/about/authoring.md. Edit by hand or export from a reference manager
+  (e.g. Zotero + Better BibTeX, "Keep updated"). Seed entries: works already cited in the essays.
+  Parser limits: no at-signs inside comments, and no bare percent-sign comment lines.
+  A publisher containing "and" needs double braces, e.g. {{Williams and Norgate}}.
+  Links: each entry has one url or doi, shown as a link on the title (quartz/plugins/abstraction/linkReferences.ts).
+  Prefer a free full text (Gutenberg, Wikisource, archive.org, author or publisher), then a DOI, then Google Books.
+  Publisher DOIs replaced by free copies: shannon1948mathematical 10.1002/j.1538-7305.1948.tb01338.x,
+  turing1936computable 10.1112/plms/s2-42.1.230.
+  Linked edition differs from the cited one: llull1501ars (1517 Lyon edition), whitehead1927principia
+  (first edition, vol. 1, 1910), leibniz1981new (1996 revised edition),
+  kemeny1976finite (1960 first edition).
+}
+
+@article{shannon1948mathematical,
+  author  = {Shannon, Claude E.},
+  title   = {A Mathematical Theory of Communication},
+  journal = {Bell System Technical Journal},
+  year    = {1948},
+  volume  = {27},
+  number  = {3},
+  pages   = {379--423},
+  url     = {https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf}
+}
+
+@article{turing1936computable,
+  author  = {Turing, Alan M.},
+  title   = {On Computable Numbers, with an Application to the {Entscheidungsproblem}},
+  journal = {Proceedings of the London Mathematical Society},
+  year    = {1936},
+  volume  = {s2-42},
+  number  = {1},
+  pages   = {230--265},
+  url     = {https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf}
+}
+
+@book{abelson1996structure,
+  author    = {Abelson, Harold and Sussman, Gerald Jay and Sussman, Julie},
+  title     = {Structure and Interpretation of Computer Programs},
+  edition   = {2},
+  publisher = {MIT Press},
+  address   = {Cambridge, MA},
+  year      = {1996},
+  url       = {https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html}
+}
+
+@book{winograd1987understanding,
+  author    = {Winograd, Terry and Flores, Fernando},
+  title     = {Understanding Computers and Cognition: A New Foundation for Design},
+  publisher = {Addison-Wesley},
+  address   = {Reading, MA},
+  year      = {1987},
+  url       = {https://books.google.com/books?id=6TwbGGSz6NYC}
+}
+
+@book{whitehead1911introduction,
+  author    = {Whitehead, Alfred North},
+  title     = {An Introduction to Mathematics},
+  publisher = {{Williams and Norgate}},
+  address   = {London},
+  year      = {1911},
+  url       = {https://www.gutenberg.org/ebooks/41568}
+}
+
+@book{russell1900critical,
+  author    = {Russell, Bertrand},
+  title     = {A Critical Exposition of the Philosophy of Leibniz},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {1900},
+  url       = {https://archive.org/details/cu31924052172271}
+}
+
+@book{oneil2016weapons,
+  author    = {O'Neil, Cathy},
+  title     = {Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy},
+  publisher = {Crown},
+  address   = {New York},
+  year      = {2016},
+  url       = {https://books.google.com/books?id=NgEwCwAAQBAJ}
+}
+
+@article{iriki1996coding,
+  author  = {Iriki, Atsushi and Tanaka, Michio and Iwamura, Yoshiaki},
+  title   = {Coding of Modified Body Schema during Tool Use by Macaque Postcentral Neurones},
+  journal = {NeuroReport},
+  year    = {1996},
+  volume  = {7},
+  number  = {14},
+  pages   = {2325--2330},
+  doi     = {10.1097/00001756-199610020-00010}
+}
+
+@article{umilta2008pliers,
+  author  = {Umiltà, M. A. and Escola, L. and Intskirveli, I. and Grammont, F. and Rochat, M. and Caruana, F. and Jezzini, A. and Gallese, V. and Rizzolatti, G.},
+  title   = {When Pliers Become Fingers in the Monkey Motor System},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {2008},
+  volume  = {105},
+  number  = {6},
+  pages   = {2209--2213},
+  doi     = {10.1073/pnas.0705985105}
+}
+
+@comment{
+  Entries below were transcribed from the essays' original footnotes (see ../archive/abstraction-wiki-prototype/sources/xbstrxct-site-md/).
+  Authors' full first names were filled in; other details are as the footnotes gave them.
+  keywords = incomplete marks entries that still lack publisher, place, edition or full title.
+}
+
+@book{locke1689essay,
+  author   = {Locke, John},
+  title    = {An Essay Concerning Human Understanding},
+  year     = {1689},
+  keywords = {incomplete},
+  url      = {https://www.gutenberg.org/ebooks/10615}
+}
+
+@book{aristotle350prior,
+  author   = {Aristotle},
+  title    = {Prior Analytics},
+  year     = {350 BCE},
+  keywords = {incomplete},
+  url      = {http://classics.mit.edu/Aristotle/prior.html}
+}
+
+@book{heidegger1927being,
+  author     = {Heidegger, Martin},
+  title      = {Being and Time},
+  translator = {Macquarrie, John and Robinson, Edward},
+  publisher  = {Harper \& Row},
+  address    = {New York},
+  year       = {1927, English Translation 1962},
+  url        = {https://books.google.com/books?id=0351VlMDqGEC}
+}
+
+@book{llull1501ars,
+  author   = {Llull, Raymond},
+  title    = {Ars magna},
+  year     = {1501},
+  keywords = {incomplete},
+  url      = {https://archive.org/details/illuminatisacrep00llul}
+}
+
+@book{gardner1958logic,
+  author   = {Gardner, Martin},
+  title    = {Logic Machines and Diagrams},
+  year     = {1958},
+  keywords = {incomplete},
+  url      = {https://archive.org/details/logicmachinesdia00gard_0}
+}
+
+@book{leibniz1666dissertatio,
+  author   = {Leibniz, Gottfried Wilhelm},
+  title    = {Dissertatio de Arte Combinatoria},
+  year     = {1666},
+  keywords = {incomplete},
+  url      = {https://archive.org/details/ita-bnc-mag-00000844-001}
+}
+
+@book{leibniz1981new,
+  author   = {Leibniz, Gottfried Wilhelm},
+  title    = {New Essays on Human Understanding},
+  year     = {1981},
+  keywords = {incomplete},
+  url      = {https://books.google.com/books?id=vD6nSUSbL7IC}
+}
+
+@book{simondon2017mode,
+  author    = {Simondon, Gilbert},
+  title     = {On the Mode of Existence of Technical Objects},
+  publisher = {University of Minnesota Press},
+  year      = {1958, English Translation 2017},
+  url       = {https://books.google.com/books?id=wdytjgEACAAJ}
+}
+
+@mastersthesis{shannon1940symbolic,
+  author = {Shannon, Claude E.},
+  title  = {A Symbolic Analysis of Relay and Switching Circuits},
+  school = {Massachusetts Institute of Technology},
+  year   = {1940},
+  url    = {https://dspace.mit.edu/handle/1721.1/11173}
+}
+
+@book{nisan2021elements,
+  author    = {Nisan, Noam and Schocken, Shimon},
+  title     = {The Elements of Computing Systems: Building a Modern Computer from First Principles},
+  edition   = {2},
+  publisher = {MIT Press},
+  address   = {Cambridge, MA},
+  year      = {2021},
+  url       = {https://www.nand2tetris.org/}
+}
+
+@article{hilbert1902mathematical,
+  author     = {Hilbert, David},
+  title      = {Mathematical Problems},
+  translator = {Newson, Mary Winston},
+  journal    = {Bulletin of the American Mathematical Society},
+  year       = {1902},
+  volume     = {8},
+  number     = {10},
+  pages      = {437--479},
+  doi        = {10.1090/S0002-9904-1902-00923-3}
+}
+
+@book{smullyan1992godel,
+  author    = {Smullyan, Raymond M.},
+  title     = {Gödel's Incompleteness Theorems},
+  series    = {Oxford Logic Guides},
+  number    = {19},
+  publisher = {Oxford University Press},
+  address   = {New York},
+  year      = {1992},
+  url       = {https://books.google.com/books?id=04zalcCdKZsC}
+}
+
+@article{church1936unsolvable,
+  author  = {Church, Alonzo},
+  title   = {An Unsolvable Problem of Elementary Number Theory},
+  journal = {American Journal of Mathematics},
+  year    = {1936},
+  volume  = {58},
+  number  = {2},
+  pages   = {345--363},
+  doi     = {10.2307/2371045}
+}
+
+@book{whitehead1927principia,
+  author   = {Whitehead, Alfred North and Russell, Bertrand},
+  title    = {Principia Mathematica},
+  year     = {1927},
+  keywords = {incomplete},
+  url      = {https://archive.org/details/dli.ernet.247278}
+}
+
+@book{krug2013dont,
+  author    = {Krug, Steve},
+  title     = {Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability},
+  edition   = {3},
+  publisher = {New Riders},
+  address   = {Berkeley, CA},
+  year      = {2013},
+  url       = {https://books.google.com/books?id=QlduAgAAQBAJ}
+}
+
+@misc{dijkstra2002ewd1300,
+  author   = {Dijkstra, Edsger W.},
+  title    = {{EWD1300}},
+  year     = {2002},
+  keywords = {incomplete},
+  url      = {https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1300.html}
+}
+
+@book{borenstein1991programming,
+  author   = {Borenstein, Nathaniel S.},
+  title    = {Programming as if People Mattered},
+  year     = {1991},
+  keywords = {incomplete},
+  url      = {https://books.google.com/books?id=ae5pJAAACAAJ}
+}
+
+@comment{
+  Entries below were copied from the bibliography of the Onward 2025 abstractionism essay
+  (overleaf-exports/onward_abstractionism/sample-base.bib) for the Rotman blurb, plus Spolsky.
+}
+
+@book{rotman2000mathematics,
+  author    = {Rotman, Brian},
+  title     = {Mathematics as Sign: Writing, Imagining, Counting},
+  publisher = {Stanford University Press},
+  address   = {Stanford, CA},
+  year      = {2000},
+  isbn      = {9780804736831},
+  url       = {https://books.google.com/books?id=0VoFtAEACAAJ}
+}
+
+@book{peirce1931collected,
+  author    = {Peirce, Charles Sanders},
+  title     = {Collected Papers of Charles Sanders Peirce},
+  editor    = {Hartshorne, Charles and Weiss, Paul},
+  publisher = {Harvard University Press},
+  address   = {Cambridge, MA},
+  year      = {1931},
+  volume    = {1--6},
+  url       = {https://archive.org/details/collected-papers-of-charles-sanders-peirce-volumes-i-and-ii-principles-of-philos}
+}
+
+@book{saussure1983course,
+  author    = {de Saussure, Ferdinand},
+  title     = {Course in General Linguistics},
+  translator = {Harris, Roy},
+  publisher = {Duckworth},
+  address   = {London},
+  year      = {1983},
+  note      = {Originally published in 1916},
+  url        = {https://books.google.com/books?id=IPhkAAAAMAAJ}
+}
+
+@book{tanakaishii2010semiotics,
+  author    = {Tanaka-Ishii, Kumiko},
+  title     = {Semiotics of Programming},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge, UK},
+  year      = {2010},
+  isbn      = {9780521736275},
+  url       = {https://books.google.com/books?id=irizHa1MXJoC}
+}
+
+@inproceedings{blackwell2006metaphors,
+  author    = {Blackwell, Alan F.},
+  title     = {Metaphors We Program By: Space, Action and Society in {Java}},
+  booktitle = {Proceedings of the 18th Annual Workshop of the Psychology of Programming Interest Group ({PPIG})},
+  address   = {Brighton, UK},
+  year      = {2006},
+  pages     = {7--21},
+  url       = {https://ppig.org/files/2006-PPIG-18th-blackwell.pdf}
+}
+
+@misc{spolsky2002law,
+  author       = {Spolsky, Joel},
+  title        = {The Law of Leaky Abstractions},
+  howpublished = {Joel on Software (blog)},
+  year         = {2002},
+  month        = nov,
+  url          = {https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/}
+}
+
+@comment{
+  Readings: Software in the natural world (content/readings/software-in-the-natural-world.md).
+}
+
+@misc{rosas2024software,
+  author       = {Rosas, Fernando E. and Geiger, Bernhard C. and Luppi, Andrea I. and Seth, Anil K. and Polani, Daniel and Gastpar, Michael and Mediano, Pedro A. M.},
+  title        = {Software in the Natural World: A Computational Approach to Hierarchical Emergence},
+  howpublished = {arXiv preprint 2402.09090 (version 2)},
+  year         = {2024},
+  url          = {https://arxiv.org/abs/2402.09090}
+}
+
+@article{shalizi2001computational,
+  author  = {Shalizi, Cosma Rohilla and Crutchfield, James P.},
+  title   = {Computational Mechanics: Pattern and Prediction, Structure and Simplicity},
+  journal = {Journal of Statistical Physics},
+  year    = {2001},
+  volume  = {104},
+  number  = {3--4},
+  pages   = {817--879},
+  url     = {https://arxiv.org/abs/cond-mat/9907176}
+}
+
+@book{kemeny1976finite,
+  author    = {Kemeny, John G. and Snell, J. Laurie},
+  title     = {Finite Markov Chains},
+  edition   = {2},
+  publisher = {Springer},
+  address   = {New York},
+  year      = {1976},
+  url       = {https://archive.org/details/finitemarkovchai0000unse}
+}
+
+@article{pfante2014comparison,
+  author  = {Pfante, Oliver and Bertschinger, Nils and Olbrich, Eckehard and Ay, Nihat and Jost, J{\"u}rgen},
+  title   = {Comparison Between Different Methods of Level Identification},
+  journal = {Advances in Complex Systems},
+  year    = {2014},
+  volume  = {17},
+  number  = {2},
+  pages   = {1450007},
+  doi     = {10.1142/S0219525914500076}
+}
+
+@article{geiger2014lumpings,
+  author  = {Geiger, Bernhard C. and Temmel, Christoph},
+  title   = {Lumpings of {Markov} Chains, Entropy Rate Preservation, and Higher-Order Lumpability},
+  journal = {Journal of Applied Probability},
+  year    = {2014},
+  volume  = {51},
+  number  = {4},
+  pages   = {1114--1132},
+  url     = {https://arxiv.org/abs/1212.4375}
+}
+
+@inproceedings{geiger2023markov,
+  author    = {Geiger, Bernhard C. and Jahani, Alireza and Hussain, Hussain and Groen, Derek},
+  title     = {{Markov} Aggregation for Speeding Up Agent-Based Movement Simulations},
+  booktitle = {Proceedings of the International Conference on Autonomous Agents and Multiagent Systems ({AAMAS})},
+  address   = {London},
+  year      = {2023},
+  pages     = {1877--1885},
+  url       = {https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p1877.pdf}
+}
+
+@article{hopfield1982neural,
+  author  = {Hopfield, John J.},
+  title   = {Neural Networks and Physical Systems with Emergent Collective Computational Abilities},
+  journal = {Proceedings of the National Academy of Sciences},
+  year    = {1982},
+  volume  = {79},
+  number  = {8},
+  pages   = {2554--2558},
+  doi     = {10.1073/pnas.79.8.2554}
+}
+
+@book{gerstner2014neuronal,
+  author    = {Gerstner, Wulfram and Kistler, Werner M. and Naud, Richard and Paninski, Liam},
+  title     = {Neuronal Dynamics: From Single Neurons to Networks and Models of Cognition},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2014},
+  url       = {https://neuronaldynamics.epfl.ch/online/index.html}
+}
+
+@article{barnett2023dynamical,
+  author  = {Barnett, Lionel and Seth, Anil K.},
+  title   = {Dynamical Independence: Discovering Emergent Macroscopic Processes in Complex Dynamical Systems},
+  journal = {Physical Review E},
+  year    = {2023},
+  volume  = {108},
+  number  = {1},
+  pages   = {014304},
+  url     = {https://arxiv.org/abs/2106.06511}
+}
+
+@comment{
+  Simondon log entry (content/log/2026-11-20-simondon.md).
+}
+
+@article{andreotti2020chauffeur,
+  author  = {Andreotti, Mattia and Tonon, Francesco and Caruso, Gaetano and Massari, Leo and Riva, Michele A.},
+  title   = {The {``Chauffeur Fracture''}: Historical Origins of an Often-Forgotten Eponym},
+  journal = {HAND},
+  year    = {2020},
+  volume  = {15},
+  number  = {2},
+  pages   = {252--254},
+  doi     = {10.1177/1558944718792650}
+}
+
+@misc{smithsonianDriving,
+  author  = {{National Museum of American History}},
+  title   = {Driving with Disabilities: Early Pioneers},
+  urldate = {2026-11-27},
+  url     = {https://americanhistory.si.edu/explore/exhibitions/america-on-the-move/online/americans-adopt-auto/driving-disabilities/early-pioneers}
+}
+
+@article{parnas1972criteria,
+  author  = {Parnas, David L.},
+  title   = {On the Criteria to Be Used in Decomposing Systems into Modules},
+  journal = {Communications of the ACM},
+  year    = {1972},
+  volume  = {15},
+  number  = {12},
+  pages   = {1053--1058},
+  doi     = {10.1145/361598.361623}
+}
+
+@misc{qiao2026comprehension,
+  author       = {Qiao, Yunhan and Shihab, Md Istiak Hossain and Haque, Summit and Hundhausen, Christopher},
+  title        = {Code Comprehension with {GitHub Copilot}: Performance Gains, Comprehension Trade-offs, and Behavioral Predictors in Brownfield Programming},
+  howpublished = {arXiv preprint 2511.02922},
+  year         = {2026},
+  url          = {https://arxiv.org/abs/2511.02922}
+}

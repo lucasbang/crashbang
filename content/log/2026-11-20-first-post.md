@@ -1,6 +1,6 @@
 ---
 title: First Post
-date: 2026-11-21
+date: 2026-11-20
 slug: first-post
 tags:
   - meta

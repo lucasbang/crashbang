@@ -46,12 +46,25 @@ HOME_POSTS = 5       # posts listed on the homepage
 FEED_POSTS = 20      # posts in feed.xml
 RELATED_POSTS = 3    # "see also" links under each post
 
+BIBLIOGRAPHY = ROOT / "bibliography"
+
 PANDOC_COMMON = [
     "--from=markdown",
     "--to=html5",
     "--highlight-style=breezedark",
     "--wrap=none",
+    # Citations: [@key] in a post becomes a formatted citation plus a
+    # References list at the end, using bibliography/bibliography.bib.
+    "--citeproc",
+    f"--bibliography={BIBLIOGRAPHY / 'bibliography.bib'}",
+    f"--csl={BIBLIOGRAPHY / 'chicago-author-date.csl'}",
+    "--metadata=reference-section-title:References",
+    "--metadata=link-citations:true",
 ]
+
+# `python3 scripts/build.py --drafts` (or `make preview DRAFTS=1`) also
+# renders posts marked `draft: true`. Normal builds and deploys skip them.
+INCLUDE_DRAFTS = "--drafts" in sys.argv[1:]
 
 TMP = Path(tempfile.mkdtemp(prefix="crashbang-"))
 atexit.register(shutil.rmtree, TMP, ignore_errors=True)
@@ -149,8 +162,10 @@ def load_posts():
     for path in sorted(POSTS_DIR.glob("*.md")):
         meta = read_meta(path)
         if str(meta.get("draft", "")).lower() == "true":
-            print(f"  (draft, skipped) {path.relative_to(ROOT)}")
-            continue
+            if not INCLUDE_DRAFTS:
+                print(f"  (draft, skipped) {path.relative_to(ROOT)}")
+                continue
+            print(f"  (draft, included) {path.relative_to(ROOT)}")
 
         title = meta.get("title")
         if not title:
